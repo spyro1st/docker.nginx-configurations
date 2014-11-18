@@ -2,4 +2,5 @@
 server {
 	include conf/includes/listen-80;
 	include conf/includes/base;
+	include conf/includes/php-fpm;
 }

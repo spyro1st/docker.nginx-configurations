@@ -1,6 +1,7 @@
-# Default server
+# Default SSL server
 server {
 	include conf/includes/listen-443;
 	include conf/includes/base;
 	include conf/includes/ssl;
+	include conf/includes/php-fpm;
 }

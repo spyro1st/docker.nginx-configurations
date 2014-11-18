@@ -1,7 +1,7 @@
-# Default TYPO3 server
+# Default Magento server
 server {
 	include conf/includes/listen-80;
 	include conf/includes/base;
-	include conf/rules/typo3;
+	include conf/rules/magento;
 	include conf/includes/php-fpm;
 }

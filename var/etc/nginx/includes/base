@@ -1,2 +1,2 @@
-server_name  _;
-root   /var/www;
+server_name _;
+root /var/www;
