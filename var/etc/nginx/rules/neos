@@ -1,0 +1,27 @@
+location ~ /\. { 
+	access_log off;
+	log_not_found off; 
+	deny all;
+}
+
+location ~ "^/_Resources/Persistent/" {
+	access_log off;
+	log_not_found off;
+	expires max;
+
+rewrite "(.{40})/.+\.(.+)" /_Resources/Persistent/$1.$2 break;
+	rewrite "([a-z0-9]+/(.+/)?[a-f0-9]{40})/.+\.(.+)" /_Resources/Persistent/$1.$2 break;
+}
+
+location ~ "^/_Resources/" {
+	access_log off;
+	log_not_found off;
+	expires max;
+	break;
+}
+
+location / {
+	rewrite ".*" /index.php last;
+}
+
+try_files $uri $uri/ /index.php?$args;
