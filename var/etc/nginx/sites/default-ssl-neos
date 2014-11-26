@@ -1,0 +1,8 @@
+# Default SSL TYPO3 server
+server {
+	include conf/includes/listen-443;
+	include conf/includes/base-neos;
+	include conf/includes/ssl;
+	include conf/rules/typo3;
+	include conf/includes/php-fpm;
+}
