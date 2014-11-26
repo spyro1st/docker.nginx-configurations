@@ -4,5 +4,5 @@ server {
 	include conf/includes/base-neos;
 	include conf/includes/ssl;
 	include conf/rules/neos;
-	include conf/includes/php-fpm;
+	include conf/includes/php-fpm-neos;
 }
