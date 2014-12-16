@@ -1,2 +1,4 @@
 server_name _;
 root /var/www/Web;
+
+index index.php index.html;
