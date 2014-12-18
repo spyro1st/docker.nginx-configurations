@@ -15,8 +15,6 @@ location ~* ^/fileadmin/templates/.*(\.txt|\.ts)$ {
 location ~* ^/typo3conf/ext/[^/]+/Resources/Private/ {
 	deny all;
 }
-location ~* ^/(typo3/|fileadmin/|typo3conf/|typo3temp/|uploads/|favicon\.ico) {
-}
 
 location / {
 	if ($query_string ~ ".+") {

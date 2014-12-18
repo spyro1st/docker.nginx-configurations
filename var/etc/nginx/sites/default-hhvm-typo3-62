@@ -2,6 +2,6 @@
 server {
 	include conf/includes/listen-80;
 	include conf/includes/base;
-	include conf/rules/typo3-62;
 	include conf/includes/hhvm;
+	include conf/rules/typo3-62;
 }

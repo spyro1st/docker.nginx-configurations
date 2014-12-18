@@ -3,6 +3,6 @@ server {
 	include conf/includes/listen-443;
 	include conf/includes/base;
 	include conf/includes/ssl;
-	include conf/rules/typo3;
 	include conf/includes/php-fpm;
+	include conf/rules/typo3;
 }

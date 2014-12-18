@@ -2,6 +2,6 @@
 server {
 	include conf/includes/listen-80;
 	include conf/includes/base-neos;
-	include conf/rules/neos;
 	include conf/includes/php-fpm-neos;
+	include conf/rules/neos;
 }

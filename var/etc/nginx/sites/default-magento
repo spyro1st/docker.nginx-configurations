@@ -2,6 +2,6 @@
 server {
 	include conf/includes/listen-80;
 	include conf/includes/base;
-	include conf/rules/magento;
 	include conf/includes/php-fpm;
+	include conf/rules/magento;
 }
