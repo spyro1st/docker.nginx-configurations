@@ -1,0 +1,4 @@
+server_name _;
+root /var/www/htdocs;
+
+index index.php index.html;
