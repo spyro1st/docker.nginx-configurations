@@ -1,7 +1,7 @@
 # Default SSL TYPO3 server
 server {
 	include conf/includes/listen-443;
-	include conf/includes/base;
+	include conf/includes/base-wordpress;
 	include conf/includes/ssl;
 	include conf/includes/php-fpm;
 	include conf/rules/wordpress;
