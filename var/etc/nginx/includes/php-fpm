@@ -5,4 +5,5 @@ location ~ \.php$ {
 	fastcgi_read_timeout 300;
 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 	include fastcgi_params;
+	fastcgi_param TYPO3_CONTEXT Development;
 }
