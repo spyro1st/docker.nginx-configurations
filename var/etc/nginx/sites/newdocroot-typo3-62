@@ -1,0 +1,7 @@
+# Default TYPO3 server
+server {
+	include conf/includes/listen-80;
+	include conf/includes/base-htdocs;
+	include conf/includes/php-fpm;
+	include conf/rules/typo3-62;
+}

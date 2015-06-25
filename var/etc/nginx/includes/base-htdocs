@@ -1,0 +1,6 @@
+server_name _;
+root /var/www/htdocs;
+
+index index.php index.html;
+
+client_max_body_size 20M;
