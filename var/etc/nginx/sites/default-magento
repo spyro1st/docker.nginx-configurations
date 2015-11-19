@@ -1,7 +1,7 @@
-# Default Magento server
+# Default Magento2 server
 server {
-	include conf/includes/listen-80;
-	include conf/includes/base-magento;
-	include conf/includes/php-fpm;
-	include conf/rules/magento;
+    include conf/includes/listen-80;
+    include conf/includes/base-magento;
+    include conf/includes/php-fpm;
+    include conf/rules/magento;
 }

@@ -1,4 +1,3 @@
-}
 location /setup {
     root $MAGE_ROOT;
     location ~ ^/setup/index.php {
