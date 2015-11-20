@@ -3,10 +3,11 @@ set $MAGE_ROOT /var/www/htdocs;
 set $MAGE_MODE default; # or production or developer
 
 root $MAGE_ROOT/pub;
-index index.php index.html;
+
+index index.php;
+
 autoindex off;
 charset off;
-client_max_body_size 20M;
 
 add_header 'X-Content-Type-Options' 'nosniff';
 add_header 'X-XSS-Protection' '1; mode=block';
