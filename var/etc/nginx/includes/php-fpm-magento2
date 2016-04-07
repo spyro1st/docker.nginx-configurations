@@ -1,5 +1,5 @@
 location ~ (index|get|static|report|404|503)\.php$ {
-	fastcgi_pass unix:/var/run/php5-fpm.sock;
+	fastcgi_pass unix:/var/run/php-fpm.sock;
 	fastcgi_index index.php;
 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 	fastcgi_param  PHP_FLAG  "session.auto_start=off \n suhosin.session.cryptua=off";
