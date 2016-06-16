@@ -73,7 +73,7 @@ location / {
 	error_page 405 = @nocache;
 
 	# serve requested content from the cache if available, otherwise pass the request to PHP
-	try_files /typo3temp/tx_ncstaticfilecache/$host${request_uri}index.html @nocache;
+	try_files /typo3temp/tx_ncstaticfilecache/${scheme}/$host${request_uri}index.html @nocache;
 }
 
 location @nocache {
